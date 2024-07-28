@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+
+header {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 780px;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.profile {
+    position: absolute;
+    top: 80%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1; /* Ensure it's above the header image */
+}
+
+.profile img {
+    border-radius: 50%;
+    margin-bottom: 10px; /* Adjust if needed */
+    width: 100px;
+    height: 100px;
+}
+
+.profile-text {
+    font-size: 1em;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.content {
+    width: 66.67vw;
+    margin: 60px auto 0;
+}
+
+.content article {
+    background: white;
+    padding: 20px;
+    margin-top: 170px;
+    margin-bottom: 60px;
+}
+
+.content article h2 {
+    margin-top: 0; /* Remove any margin above the heading */
+    margin-bottom: 0; /* Remove any margin below the heading */
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.content article p {
+    margin-top: 0; /* Remove margin above the paragraph */
+    margin-bottom: 20px; /* Add margin below the paragraph if needed */
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 120px;
+    
+}
+
+.recommendation {
+    font-weight: bold;
+    color: #e74c3c;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
