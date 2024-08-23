@@ -1,0 +1,117 @@
+/* Base styles for images */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Default display, show the full image if no media query matches */
+img {
+  width: 645px; /* Full width for homer.jpg */
+  height: 645px;
+  object-fit: none; /* Ensures only part of the image is shown */
+  object-position: top left; /* Start with the top-left corner */
+}
+
+/* Media queries for homer.jpg */
+@media (max-width: 1600px) and (min-width: 1401px) {
+  img {
+      object-position: top right;
+  }
+}
+
+@media (max-width: 1400px) and (min-width: 1201px) {
+  img {
+      object-position: bottom left;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 1001px) {
+  img {
+      object-position: bottom right;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 801px) {
+  img {
+      object-position: bottom left;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 601px) {
+  img {
+      object-position: top right;
+  }
+}
+
+@media (max-width: 600px) {
+  img {
+      object-position: top left;
+  }
+}
+
+/* Styles for software.png */
+@media screen and (max-width: 1200px) {
+  img {
+      width: 640px; /* Full width for software.png */
+      height: 480px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 1101px) {
+  img {
+      object-position: top left; /* First image, top-left */
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 1001px) {
+  img {
+      object-position: top center; /* Second image, top-middle */
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 901px) {
+  img {
+      object-position: top right; /* Third image, top-right */
+  }
+}
+
+@media (max-width: 900px) and (min-width: 801px) {
+  img {
+      object-position: bottom left; /* First image, bottom-left */
+  }
+}
+
+@media (max-width: 800px) and (min-width: 701px) {
+  img {
+      object-position: bottom center; /* Second image, bottom-middle */
+  }
+}
+
+@media (max-width: 700px) and (min-width: 601px) {
+  img {
+      object-position: bottom right; /* Third image, bottom-right */
+  }
+}
+
+@media (max-width: 600px) and (min-width: 501px) {
+  img {
+      object-position: top left; /* Fourth image, top-left */
+  }
+}
+
+@media (max-width: 500px) and (min-width: 401px) {
+  img {
+      object-position: top right; /* Fifth image, top-right */
+  }
+}
+
+@media (max-width: 400px) {
+  img {
+      object-position: bottom right; /* Last image, bottom-right */
+  }
+}
