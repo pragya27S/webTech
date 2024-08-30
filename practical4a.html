@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Layout and Customization</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .custom-bg {
+            background-color: #f8f9fa;
+        }
+        .custom-border {
+            border: 2px solid #007bff;
+            border-radius: 5px;
+        }
+        .custom-padding {
+            padding: 20px;
+        }
+        .custom-margin {
+            margin: 20px 0;
+        }
+        .custom-text-color {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Bootstrap Layout Example</h1>
+    </header>
+    
+    <div class="container my-4">
+        <!-- Row with different column sizes -->
+        <div class="row">
+            <div class="col-md-4 custom-bg custom-padding">
+                <h2 class="custom-text-color">Column 1</h2>
+                <p>This is a simple column with custom background and padding.</p>
+            </div>
+            <div class="col-md-4 custom-bg custom-padding">
+                <h2 class="custom-text-color">Column 2</h2>
+                <p>This is another column with custom background and padding.</p>
+            </div>
+            <div class="col-md-4 custom-bg custom-padding">
+                <h2 class="custom-text-color">Column 3</h2>
+                <p>This is yet another column with custom background and padding.</p>
+            </div>
+        </div>
+        
+        <!-- Custom Card -->
+        <div class="card custom-border my-4">
+            <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        
+        <!-- Form Example -->
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
